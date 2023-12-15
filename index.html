@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <script>
+      (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+        key: "AIzaSyCsiNCh0hGenli86QBh-Q2he0weYejj_Yc",
+        v: "weekly",
+      });
+    </script>
+    <title>Owl House Magic Collection Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Source Code Pro', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <header class="header">
+             <img src="/img/logoNew.png" alt="logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Game</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="boxes">
+                <section class="box">
+                    <header><h2>Game status</h2></header>
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <h3 id="player-name">Player: </h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Engergy Used: <span id="consumed"></span></td>
+                            <td>Energy Budget: <span id="budget"></span></td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="box">
+                    <header><h2>Magic Targets</h2></header>
+                    <div id="magics">
+                    </div>
+                </section>
+            </div>
+            <div id="map">
+            </div>
+            <div class="goal hide">
+                <h4>Voilà!</h4>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>Made by Mengna Deng.  All right reserved</p>
+        </footer>
+    </div>
+    <div id="player-modal">
+        <form id="player-form">
+            <input id = "player-input" type="text" placeholder="Please enter your name" required>
+            <button>Start game</button>
+        </form>
+    </div>
+ </body>
+</html>
