@@ -58,12 +58,12 @@ function checkMagics(meets_magics){
   }
 }
 
-// Check if game is over
+// Check Game Over
 function checkGameOver(budget){
   if (budget <= 0) {
       alert(`Game Over! ${globalMagics.length} magics collected`);
       return false;
-  } else if (budget > 0 && globalMagics.length === 7) {
+  } else if ( globalMagics.length === 7) {
       alert('Congrats! The Magic World has been saved!');
       return false;
   }
