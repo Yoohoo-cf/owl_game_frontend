@@ -6,7 +6,7 @@
     --light-blue: #7f91c9;
 }
 
-html，body {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,7 +32,7 @@ html，body {
 .header {
     display: flex;
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 1;
 }
 
@@ -70,7 +70,7 @@ li a:hover {
 
 
 main,
-.about_main
+.about_main,
 .contact_main{
     padding: 1rem 3rem;
     display: flex;
