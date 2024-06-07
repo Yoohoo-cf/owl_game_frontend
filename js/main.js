@@ -16,7 +16,8 @@ async function initMap() {
 
 // Define Variables
 // const apiUrl = 'http://127.0.0.1:7000/';
-const apiUrl = 'http://owlgamebackend.up.railway.app:26962/';
+// // const apiUrl = 'http://127.0.0.1:26962'
+const apiUrl = 'https://owlgamebackend.up.railway.app/';
 const startLoc = 'EFHK';
 const globalMagics = [];
 
